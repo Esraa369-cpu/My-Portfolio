@@ -1,0 +1,133 @@
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #F4EDEB; /* Soft rose gold background */
+  color: #8B5E3B; /* Elegant neutral text */
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: #C0A080; /* Modern rose gold header */
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: top 0.3s;
+}
+
+.header.hidden {
+  top: -100px;
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 0 20px;
+}
+
+.social-links a, .nav-links a {
+  margin: 0 10px;
+  color: white;
+  text-decoration: none;
+}
+
+.landing-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  text-align: center;
+  background: #C0A080; /* Soft rose gold */
+  color: white;
+}
+
+.avatar {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin-bottom: 20px;
+  border: 4px solid white;
+}
+
+.projects-section {
+  padding: 50px;
+  text-align: center;
+  background: #F4EDEB; /* Neutral soft background */
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.project-card {
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.project-card:hover {
+  transform: scale(1.05);
+}
+
+.project-card a {
+  color: #8B5E3B; /* Elegant neutral accent */
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.project-image {
+  width: 100%;        /* Makes the image responsive */
+  height: 180px;      /* Set a fixed height for consistency */
+  object-fit: cover;  /* Ensures the image fills the area without distortion */
+  border-radius: 8px; /* Adds rounded corners for a smooth look */
+}
+
+
+.contact-section {
+  padding: 50px;
+  text-align: center;
+  background: #F4EDEB; /* Soft neutral */
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.input-field, .textarea-field, .submit-button {
+  margin: 10px 0;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #C0A080;
+  font-size: 16px;
+}
+
+.submit-button {
+  background: #C0A080;
+  color: white;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.submit-button:hover {
+  background: #A07860;
+}
+
+.footer {
+  text-align: center;
+  padding: 20px;
+  background: #C0A080;
+  color: white;
+}
