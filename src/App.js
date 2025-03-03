@@ -39,7 +39,7 @@ const Header = () => {
 
 const Landing = () => (
   <section id="about" className="landing-section">
-     <img src="/avatar.jpg" alt="Your Avatar" className="avatar" />
+     <img src={`${process.env.PUBLIC_URL}/avatar.jpg`} alt="Your Avatar" className="avatar" />
     <h2>Hello, I am Esraa!</h2>
     <h1> Frontend Developer</h1>
   </section>
